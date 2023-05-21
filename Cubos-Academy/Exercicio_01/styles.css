@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    /*background-color: black;*/
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    padding: 24px 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 24px 0px;
+}
+
+h1 {
+    margin: 12px 5%;
+}
+
+p {
+    text-align: justify;
+    margin: 24px 5%;
+}
+
+
+.header-footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 24px;
+}
+
+#logo {
+    padding: 4px 24px;
+    height: 24px;
+    width: 36px;
+}
+
+#tec-img {
+    width: 100%;
+    height: 400px;
+}
+
+.section {
+    text-align: center;
+}
+
+.products-cards {
+    display: inline-block;
+    margin: 12px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+.products-cards img {
+    width: 90%;
+    height: 90%;
+}
