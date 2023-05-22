@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  margin: 12px;
+}
+
+#menu ul {
+  background-color: lightgray;
+  list-style: none;
+  width: 20%;
+}
+
+#menu ul > li {
+  border: 1px solid black;
+  padding-left: 10px;
+}
+
+li:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+li:hover::before {
+  content: "> ";
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+li:hover a {
+  color: white;
+}
+
+ol {
+  margin: 10px;
+}
