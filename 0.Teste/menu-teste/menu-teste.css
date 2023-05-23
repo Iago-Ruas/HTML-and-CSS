@@ -1,0 +1,58 @@
+/*Define as configurações da tag `nav` da página.*/
+.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/*Estiliza os links dentro da tag `nav`.*/
+.menu a {
+  float: left;
+  display: block;
+  color: #D9E1CC;
+  text-align: center;
+  padding: 0.75rem/*12px*/ 1rem/*16px*/;
+  text-decoration: none;
+  font-size: 1.25rem/*20px*/;
+}
+
+/*Muda a cor e estilo do hover em links não ativos.*/
+.menu .notactive:hover {
+  background-color: none;
+  color: black;
+  text-indent: 1rem;
+}
+
+/*Adiciona uma classe `active` para ressaltar a página atual.*/
+.menu a.active {
+  background-color: none;
+  color: #D9E1CC;
+}
+
+/*Esconde o link que deveria abrir e fechar o menu em telas pequenas.*/
+.menu .icon {
+  display: none;
+}
+
+/*Quando a tela tiver menos de 600 pixels de largura, oculta todos os links, exceto o primeiro ("Início"). Mostra o link que deve abrir e fechar o menu(.icon)*/
+@media screen and (max-width: 37.5rem/*600px*/) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/*A classe `responsivo` é adicionada ao menu com JavaScript quando o usuário clica no ícone. Essa classe faz com que o menu fique bem em telas pequenas (exiba os links verticalmente em vez de horizontalmente)*/
+@media screen and (max-width: 37.5rem/*600px*/) {
+  .menu.responsivo {position: relative;}
+  .menu.responsivo a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsivo a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
