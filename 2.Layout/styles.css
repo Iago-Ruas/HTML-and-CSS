@@ -1,0 +1,43 @@
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vmax;
+  width: 100%;
+}
+
+header{
+  border: 0.25rem solid black;
+  height: 10%;
+}
+
+main{
+  padding: 1rem;
+  border: 0.25rem solid black;
+  height: 80%;
+  text-align: center;
+}
+
+main .left{
+  border: 0.25rem solid black; 
+  height: 100%;
+  width: 19%;
+  display: inline-block;
+
+}
+
+main .center{
+  border: 0.25rem solid black;
+  margin: 0;
+  height: 100%; 
+  width: 79%;
+  display: inline-block;
+}
+
+footer{
+  border: 0.25rem solid black;
+  height: 15%;
+}
